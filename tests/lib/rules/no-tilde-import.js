@@ -18,7 +18,7 @@ ruleTester.run("no-tilde-import", rule, {
     "import { Something, Autre } from '@/anywhere-valid'",
     "import Default, { Something, Autre } from '@/anywhere-valid'",
     "import Something from '@/anywhere-valid'",
-    "import '~/anywhere-invalid'"
+    "import '@/anywhere-invalid'"
   ],
 
   invalid: [
