@@ -12,7 +12,7 @@ const ruleTableRows = Object.keys(rules)
     return [
       docs.recommended ? '✔' : '',
       fixable ? '🔧' : '',
-      `[react/${id}](docs/rules/${id}.md)`,
+      `[antonin/${id}](docs/rules/${id}.md)`,
       docs.description,
     ].join(' | ');
   });
