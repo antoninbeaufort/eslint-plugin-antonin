@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-antonin",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "ESLint plugin",
   "main": "lib/index.js",
   "scripts": {
@@ -29,5 +29,18 @@
   },
   "dependencies": {
     "markdown-magic": "^2.6.0"
+  },
+  "publishConfig": {
+    "ignore": [
+      ".github/",
+      "!lib",
+      "docs/",
+      "tests/",
+      "*.md",
+      "*.config.js",
+      ".eslintrc",
+      ".editorconfig",
+      "tsconfig.json"
+    ]
   }
 }
