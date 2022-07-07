@@ -29,7 +29,7 @@ $ npm install eslint eslint-plugin-antonin
 <!-- AUTO-GENERATED-CONTENT:START (BASIC_RULES) -->
 | ✔ | 🔧 | Rule | Description |
 | :---: | :---: | :--- | :--- |
-| ✔ | 🔧 | [react/no-tilde-import](docs/rules/no-tilde-import.md) | Disallow the use of `import` with tildes or multiple @ |
+| ✔ | 🔧 | [antonin/no-tilde-import](docs/rules/no-tilde-import.md) | Disallow the use of `import` with tildes or multiple @ |
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 # License
