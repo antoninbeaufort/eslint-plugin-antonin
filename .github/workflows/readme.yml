@@ -29,4 +29,4 @@ jobs:
           useLockFile: false
 
       - name: 🖨️ Generate list of rules
-        run: npm run generate-list-of-rules:check
+        run: npm run generate-list-of-rules
