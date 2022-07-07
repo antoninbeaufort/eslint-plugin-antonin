@@ -1,0 +1,33 @@
+{
+  "name": "eslint-plugin-antonin",
+  "version": "1.2.0",
+  "description": "ESLint plugin",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha ./tests/**/*.js",
+    "generate-list-of-rules": "md-magic --path README.md",
+    "generate-list-of-rules:check": "npm run generate-list-of-rules && git diff --exit-code README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoninbeaufort/eslint-plugin-antonin.git"
+  },
+  "keywords": [
+    "eslint",
+    "plugin",
+    "eslint-plugin-antonin",
+    "rules"
+  ],
+  "author": {
+    "name": "Antonin Beaufort",
+    "email": "antonin.beaufort@viacesi.fr"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "markdown-magic": "^2.6.0"
+  }
+}
