@@ -2,7 +2,7 @@
 
 /* eslint-disable no-restricted-syntax */
 
-const { rules } = require('./index');
+const { rules } = require('./lib/index');
 
 const ruleTableRows = Object.keys(rules)
   .sort()
