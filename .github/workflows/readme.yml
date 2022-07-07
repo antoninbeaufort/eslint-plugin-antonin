@@ -2,16 +2,31 @@ name: 'Tests: readme'
 
 on: [pull_request, push]
 
+permissions:
+  actions: write
+  contents: write
+
 jobs:
   readme:
+    name: 📄 Readme
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: ljharb/actions/node/install@main
-        name: 'nvm install lts/* && npm install'
+      - name: 🛑 Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.1
+
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v3
         with:
-          node-version: 'lts/*'
-        env:
-          NPM_CONFIG_LEGACY_PEER_DEPS: true
-      - run: npm run generate-list-of-rules:check
+          node-version: 16
+
+      - name: 📥 Download deps
+        uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: false
+
+      - name: 🖨️ Generate list of rules
+        run: npm run generate-list-of-rules:check

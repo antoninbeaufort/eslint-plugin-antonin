@@ -28,3 +28,11 @@ $ npm install eslint eslint-plugin-antonin
 
 <!-- AUTO-GENERATED-CONTENT:START (BASIC_RULES) -->
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+# License
+
+`eslint-plugin-antonin` is licensed under the [MIT License](https://opensource.org/licenses/mit-license.php).
+
+
+[npm-url]: https://npmjs.org/package/eslint-plugin-antonin
+[npm-image]: https://img.shields.io/npm/v/eslint-plugin-antonin.svg
