@@ -31,7 +31,14 @@ jobs:
       - name: 🖨️ Generate list of rules
         run: npm run generate-list-of-rules
       
-      - uses: EndBug/add-and-commit@v7
+      - name: 👀 Check if README.md was updated
+        uses: technote-space/get-diff-action@v6
+        with:
+          FILES: README.md
+
+      - name: 🚀 Add and commit
+        if: env.GIT_DIFF
+        uses: EndBug/add-and-commit@v7
         with:
           message: "docs(readme): Update list of rules"
           default_author: github_actions
